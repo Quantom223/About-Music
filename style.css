@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body{
+   
+   font-family: poppins;
+ }
+
+  /* navigation/landingpage section */
+ .navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+ }
+
+ #logo{
+  color: #818181;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: x-large;
+ }
+
+ .nav-items{
+  display: flex;
+  justify-content: space-around;
+  width: 45%;
+  
+ }
+
+ .nav-items li{
+  list-style-type: none;
+ }
+
+ .nav-items a{
+  color: #818181;
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-size: small;
+ }
+
+ .burger{
+  display: none;
+}
+
+ #mySidenav{
+  display: none;
+}
+
+ @media screen and (max-width: 905px) {
+
+  .burger{display: block;}
+  #mySidenav{display: block;}
+  .nav-items{display: none;}
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #dbbacf;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+ }
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 905px) {
+  .nav-items{width: 50%;}
+}
+
+@media screen and (max-width: 536px) {
+
+  .logo{
+    margin-left: -5em;
+  }
+
+  .landing-page-txt{
+    font-size: xx-large;
+    text-align: left;
+    padding-left: 1.3em;
+    margin-bottom: 1em;
+  }
+
+  .img{
+    margin-top: -1em;
+    background-color: #dbbacf;
+    border: 1px;
+    border-radius: 50% 11%;
+    float: right;
+  }
+
+  .landing-page-stxt{
+    margin-top: 1em;
+    padding-right: 0;
+    margin-bottom: 0;
+    font-size: small;
+    text-align: left;
+    padding-left: 3.5em;
+    width: 41ch;
+    font-weight: 300;
+  }
+
+  /* about container */
+
+.about-container{
+  margin-top: 5em;
+  color: #818181;
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.about-box{
+  display: block;
+  margin-inline: auto;
+  border: 5px solid gainsboro;
+  background-color: #dbbacf;
+  border-radius: 1px;
+  align-items: center;
+  text-align: left;
+  max-width: 80%;
+  padding: 1.5em;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.box1{
+  background-image: url(imagess/music\ 7.png);
+}
+.box2{
+  background-image: url(imagess/music\ 6.png);
+}
+.box3{
+  background-image: url(imagess/music\ 9.png);
+}
+
+.A-txt{
+  margin-top: 10em;
+}
+
+.about-texts{
+  font-size: medium;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.quote-container{
+  position: relative;
+  text-align: center;
+}
+
+.quote{
+  max-width: 100%;
+  display: block;
+  margin-inline: auto;
+}
+
+.q-txt{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: x-large;
+  line-height: 1.4;
+}
+
+.cnt-container{
+  background-color: #dcdcdc7b;
+  margin-top: 5em;
+  margin-inline: auto;
+  margin-bottom: 5em;
+  color: #818181;
+  opacity: 1;
+  display: grid;
+  grid-gap: 3em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.cnt-box{
+  margin-left: 4.5em;
+}
+
+.cnt-head{
+  margin-top: 2em;
+}
+
+.cnt-txt{
+  letter-spacing: 0.07em;
+  font-size:x-small;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 80%;
+  margin: 1em 0;
+}
+
+.cnt-btn{
+  background-color: #dbbacf;
+  padding: 0.6em;
+  min-width: 23%;
+  border: 2px;
+  border-radius: 30px;
+}
+
+.cnt-btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.white{
+  background-color: whitesmoke;
+  max-width: 45%;
+  padding: 2em;
+  border: 2px;
+  border-radius: 30px;
+}
+
+.bb{
+  margin-bottom: 2em;
+}
+ }
+
+
+
+
+
+ 
+ 
